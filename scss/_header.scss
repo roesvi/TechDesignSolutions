@@ -1,0 +1,71 @@
+@use './_variables' as *;
+@use './_mixins' as *;
+
+.header {
+    background: linear-gradient(135deg, $primary, $secondary);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .header__inner {
+    @include flex-between;
+  }
+  
+  .header__logo {
+    font-family: $font-heading;
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  
+  .header__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    
+    @include respond-to(md) {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
+  .header__nav-item {
+    position: relative;
+  }
+  
+  .header__nav-link {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-weight: 500;
+    transition: $transition;
+    padding: 0.5rem 0;
+    
+    &:hover,
+    &--active {
+      color: white;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: $accent;
+      transition: $transition;
+    }
+    
+    &:hover::after,
+    &--active::after {
+      width: 100%;
+    }
+  }
+  
+  .header__actions {
+    display: flex;
+    gap: 1rem;
+  }

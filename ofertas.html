@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas - TechDesign Solutions</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <!-- CSS Compilado -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="header__logo">TechDesign</div>
+                
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">Inicio</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="productos.html" class="header__nav-link">Productos</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="categorias.html" class="header__nav-link">Categorías</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="ofertas.html" class="header__nav-link header__nav-link--active">Ofertas</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contacto.html" class="header__nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <button class="btn btn-light me-2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-light me-2">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="btn btn-light position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-offers">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-offers__title">Ofertas Exclusivas</h1>
+                    <p class="hero-offers__subtitle">Descubre nuestras promociones especiales con descuentos de hasta el 50% en productos seleccionados</p>
+                    <div class="hero-offers__countdown">
+                        <div class="countdown__title">Termina en:</div>
+                        <div class="countdown__timer">
+                            <div class="countdown__item">
+                                <span class="countdown__number">02</span>
+                                <span class="countdown__label">Días</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number">12</span>
+                                <span class="countdown__label">Horas</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number">45</span>
+                                <span class="countdown__label">Min</span>
+                            </div>
+                            <div class="countdown__item">
+                                <span class="countdown__number">30</span>
+                                <span class="countdown__label">Seg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-offers__cta">
+                        <a href="#featured-offers" class="btn btn--accent">Ver Ofertas</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-offers__image">
+                        <img src="./assets/img/bolsas.avif" alt="Ofertas" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Offers -->
+    <section id="featured-offers" class="section section--offers">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Ofertas Destacadas</h2>
+                <p class="section__subtitle">Productos seleccionados con los mejores descuentos</p>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="row">
+                    <!-- Producto 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="offer-card">
+                            <div class="offer-card__badge">-30%</div>
+                            <div class="offer-card__image">
+                                <img src="./assets/img/reloj.avif" alt="Smartwatch">
+                            </div>
+                            <div class="offer-card__content">
+                                <div class="offer-card__category">WEARABLES</div>
+                                <h3 class="offer-card__title">Smartwatch Pro Series X</h3>
+                                <div class="offer-card__pricing">
+                                    <span class="offer-card__old-price">$199.000</span>
+                                    <span class="offer-card__price">$139.000</span>
+                                </div>
+                                <div class="offer-card__rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="reviews">(128)</span>
+                                </div>
+                                <div class="offer-card__footer">
+                                    <button class="btn btn--primary">Añadir al carrito</button>
+                                    <button class="btn btn--icon">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="offer-card">
+                            <div class="offer-card__badge">-25%</div>
+                            <div class="offer-card__image">
+                                <img src="./assets/img/fono.avif" alt="Smartphone">
+                            </div>
+                            <div class="offer-card__content">
+                                <div class="offer-card__category">MÓVILES</div>
+                                <h3 class="offer-card__title">Smartphone Pro Camera</h3>
+                                <div class="offer-card__pricing">
+                                    <span class="offer-card__old-price">$899.000</span>
+                                    <span class="offer-card__price">$674.000</span>
+                                </div>
+                                <div class="offer-card__rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="reviews">(312)</span>
+                                </div>
+                                <div class="offer-card__footer">
+                                    <button class="btn btn--primary">Añadir al carrito</button>
+                                    <button class="btn btn--icon">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="offer-card">
+                            <div class="offer-card__badge">-40%</div>
+                            <div class="offer-card__image">
+                                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Monitor">
+                            </div>
+                            <div class="offer-card__content">
+                                <div class="offer-card__category">MONITORES</div>
+                                <h3 class="offer-card__title">Monitor Gaming 27" 144Hz</h3>
+                                <div class="offer-card__pricing">
+                                    <span class="offer-card__old-price">$349.000</span>
+                                    <span class="offer-card__price">$209.000</span>
+                                </div>
+                                <div class="offer-card__rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="reviews">(142)</span>
+                                </div>
+                                <div class="offer-card__footer">
+                                    <button class="btn btn--primary">Añadir al carrito</button>
+                                    <button class="btn btn--icon">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 4 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="offer-card">
+                            <div class="offer-card__badge">-35%</div>
+                            <div class="offer-card__image">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Auriculares">
+                            </div>
+                            <div class="offer-card__content">
+                                <div class="offer-card__category">AUDIO</div>
+                                <h3 class="offer-card__title">Auriculares Noise Cancelling</h3>
+                                <div class="offer-card__pricing">
+                                    <span class="offer-card__old-price">$129.000</span>
+                                    <span class="offer-card__price">$84.000</span>
+                                </div>
+                                <div class="offer-card__rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="reviews">(245)</span>
+                                </div>
+                                <div class="offer-card__footer">
+                                    <button class="btn btn--primary">Añadir al carrito</button>
+                                    <button class="btn btn--icon">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 5 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="offer-card">
+                            <div class="offer-card__badge">-20%</div>
+                            <div class="offer-card__image">
+                                <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Teclado">
+                            </div>
+                            <div class="offer-card__content">
+                                <div class="offer-card__category">ACCESORIOS</div>
+                                <h3 class="offer-card__title">Teclado Mecánico Gaming</h3>
+                                <div class="offer-card__pricing">
+                                    <span class="offer-card__old-price">$89.000</span>
+                                    <span class="offer-card__price">$71.000</span>
+                                </div>
+                                <div class="offer-card__rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="reviews">(96)</span>
+                                </div>
+                                <div class="offer-card__footer">
+                                    <button class="btn btn--primary">Añadir al carrito</button>
+                                    <button class="btn btn--icon">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 6 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="offer-card">
+                            <div class="offer-card__badge">-45%</div>
+                            <div class="offer-card__image">
+                                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tablet">
+                            </div>
+                            <div class="offer-card__content">
+                                <div class="offer-card__category">TABLETS</div>
+                                <h3 class="offer-card__title">Tablet Pro 10.5"</h3>
+                                <div class="offer-card__pricing">
+                                    <span class="offer-card__old-price">$499.000</span>
+                                    <span class="offer-card__price">$274.000</span>
+                                </div>
+                                <div class="offer-card__rating">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="reviews">(54)</span>
+                                </div>
+                                <div class="offer-card__footer">
+                                    <button class="btn btn--primary">Añadir al carrito</button>
+                                    <button class="btn btn--icon">
+                                        <i class="far fa-heart"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flash Sale Banner -->
+    <section class="flash-sale">
+        <div class="container">
+            <div class="flash-sale__content">
+                <div class="flash-sale__text">
+                    <h2 class="flash-sale__title">Flash Sale</h2>
+                    <p class="flash-sale__subtitle">Descuentos relámpago por tiempo limitado</p>
+                </div>
+                <div class="flash-sale__countdown">
+                    <div class="countdown__item">
+                        <span class="countdown__number">01</span>
+                        <span class="countdown__label">Días</span>
+                    </div>
+                    <div class="countdown__item">
+                        <span class="countdown__number">06</span>
+                        <span class="countdown__label">Horas</span>
+                    </div>
+                    <div class="countdown__item">
+                        <span class="countdown__number">30</span>
+                        <span class="countdown__label">Min</span>
+                    </div>
+                    <div class="countdown__item">
+                        <span class="countdown__number">45</span>
+                        <span class="countdown__label">Seg</span>
+                    </div>
+                </div>
+                <a href="#" class="btn btn--accent">Ver Ofertas Flash</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recently Discounted -->
+    <section class="section section--discounted">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Recién Rebajados</h2>
+                <p class="section__subtitle">Productos con nuevos descuentos añadidos</p>
+            </div>
+            
+            <div class="discounted-products">
+                <div class="row">
+                    <!-- Producto 1 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="discounted-card">
+                            <div class="discounted-card__badge">-20%</div>
+                            <div class="discounted-card__image">
+                                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Auriculares">
+                            </div>
+                            <div class="discounted-card__content">
+                                <h3 class="discounted-card__title">Auriculares Inalámbricos</h3>
+                                <div class="discounted-card__pricing">
+                                    <span class="discounted-card__old-price">$79.000</span>
+                                    <span class="discounted-card__price">$63.000</span>
+                                </div>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="discounted-card">
+                            <div class="discounted-card__badge">-15%</div>
+                            <div class="discounted-card__image">
+                                <img src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Laptop">
+                            </div>
+                            <div class="discounted-card__content">
+                                <h3 class="discounted-card__title">Laptop Ultradelgada</h3>
+                                <div class="discounted-card__pricing">
+                                    <span class="discounted-card__old-price">$999.000</span>
+                                    <span class="discounted-card__price">$849.000</span>
+                                </div>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="discounted-card">
+                            <div class="discounted-card__badge">-25%</div>
+                            <div class="discounted-card__image">
+                                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Coche">
+                            </div>
+                            <div class="discounted-card__content">
+                                <h3 class="discounted-card__title">Cámara Deportiva 4K</h3>
+                                <div class="discounted-card__pricing">
+                                    <span class="discounted-card__old-price">$149.000</span>
+                                    <span class="discounted-card__price">$112.000</span>
+                                </div>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 4 -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="discounted-card">
+                            <div class="discounted-card__badge">-30%</div>
+                            <div class="discounted-card__image">
+                                <img src="https://images.unsplash.com/photo-1585155770447-2f66e2a397b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Altavoz">
+                            </div>
+                            <div class="discounted-card__content">
+                                <h3 class="discounted-card__title">Altavoz Bluetooth</h3>
+                                <div class="discounted-card__pricing">
+                                    <span class="discounted-card__old-price">$129.000</span>
+                                    <span class="discounted-card__price">$90.000</span>
+                                </div>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section">
+        <div class="container">
+            <div class="newsletter">
+                <h2 class="newsletter__title">No te pierdas nuestras ofertas</h2>
+                <p class="newsletter__text">Suscríbete para recibir alertas de promociones exclusivas y descuentos especiales</p>
+                
+                <div class="newsletter__form">
+                    <input type="email" class="newsletter__input" placeholder="Tu correo electrónico">
+                    <button class="btn btn--accent">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer__title">TechDesign Solutions</h3>
+                    <p>Líderes en tecnología y diseño innovador para mejorar tu experiencia digital con productos de calidad premium.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h3 class="footer__title">Enlaces rápidos</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="index.html" class="footer__link">Inicio</a></li>
+                        <li class="footer__item"><a href="productos.html" class="footer__link">Productos</a></li>
+                        <li class="footer__item"><a href="categorias.html" class="footer__link">Categorías</a></li>
+                        <li class="footer__item"><a href="ofertas.html" class="footer__link">Ofertas</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Reseñas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h3 class="footer__title">Categorías</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Smartphones</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Portátiles</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Wearables</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Audio</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Accesorios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h3 class="footer__title">Contacto</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><i class="fas fa-map-marker-alt me-2"></i> Av. Tecnología 123, Santiago</li>
+                        <li class="footer__item"><i class="fas fa-phone me-2"></i> +56 9 1234 5678</li>
+                        <li class="footer__item"><i class="fas fa-envelope me-2"></i> info@techdesignsolutions.cl</li>
+                        <li class="footer__item"><i class="fas fa-clock me-2"></i> L-V: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 TechDesign Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

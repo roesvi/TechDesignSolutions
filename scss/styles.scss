@@ -1,0 +1,49 @@
+// Importar todos los parciales
+@use './_variables' as *;
+@use './_mixins' as *;
+@use './_global' as *;
+@use './_bootstrap-overrides' as *;
+@use './_header' as *;
+@use './_hero' as *;
+@use './_products' as *;
+@use './_features' as *;
+@use './_testimonials' as *;
+@use './_newsletter' as *;
+@use './_footer' as *;
+@use './_products-page' as *;
+@use './_categories-page' as *; 
+@use './_offers-page' as *;
+@use './_contact-page' as *;
+
+// Estilos adicionales
+.btn--accent {
+  background: $accent;
+  color: $dark;
+  
+  &:hover {
+    background: darken($accent, 5%);
+    color: $dark;
+  }
+}
+
+.btn--outline {
+  background: transparent;
+  border: 2px solid $primary;
+  color: $primary;
+  
+  &:hover {
+    background: $primary;
+    color: white;
+  }
+}
+
+.btn--transparent {
+  color: white;
+  background: transparent;
+  border: none;
+  
+  &:hover {
+    background: rgba($dark, 0.2);
+  }
+}
+

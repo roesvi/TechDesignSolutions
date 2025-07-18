@@ -1,0 +1,38 @@
+@use './_variables' as *;
+@use './_mixins' as *;
+
+// Personalización de componentes Bootstrap
+.btn {
+    border-radius: 50px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: $transition;
+  }
+  
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    
+    &:hover {
+      background-color: $primary-dark;
+      border-color: $primary-dark;
+    }
+  }
+  
+  .card {
+    border: none;
+    border-radius: $border-radius;
+    overflow: hidden;
+    transition: $transition;
+    box-shadow: $box-shadow;
+    height: 100%;
+    
+    &:hover {
+      @include card-hover;
+    }
+  }
+  
+  // Ajustes del grid
+  .row {
+    --bs-gutter-x: 1.5rem;
+  }

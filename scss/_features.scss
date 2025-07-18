@@ -1,0 +1,44 @@
+@use './_variables' as *;
+@use './_mixins' as *;
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .feature {
+    text-align: center;
+    padding: 2rem;
+    border-radius: $border-radius;
+    background: white;
+    box-shadow: $box-shadow;
+    transition: $transition;
+    height: 100%;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .feature__icon {
+    width: 70px;
+    height: 70px;
+    background: rgba($primary, 0.1);
+    border-radius: 50%;
+    @include flex-center;
+    margin: 0 auto 1.5rem;
+    color: $primary;
+    font-size: 1.75rem;
+  }
+  
+  .feature__title {
+    font-family: $font-heading;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .feature__text {
+    color: $gray;
+  }

@@ -1,0 +1,57 @@
+@use './_variables' as *;
+@use './_mixins' as *;
+
+.newsletter {
+    background: linear-gradient(135deg, $primary, $secondary);
+    color: white;
+    border-radius: $border-radius;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .newsletter__title {
+    font-family: $font-heading;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter__text {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+  }
+  
+  .newsletter__form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    
+    @include respond-to(sm) {
+      flex-direction: column;
+    }
+  }
+  
+  .newsletter__input {
+    flex: 1;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    
+    @include respond-to(sm) {
+      width: 100%;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba($accent, 0.3);
+    }
+  }
+  
+  .newsletter__button {
+    @include respond-to(sm) {
+      border-radius: 50px;
+    }
+  }

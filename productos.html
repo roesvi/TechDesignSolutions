@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - TechDesign Solutions</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="header__logo">TechDesign</div>
+                
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">Inicio</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="productos.html" class="header__nav-link header__nav-link--active">Productos</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="categorias.html" class="header__nav-link">Categorías</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="ofertas.html" class="header__nav-link">Ofertas</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contacto.html" class="header__nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <button class="btn btn-light me-2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-light me-2">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="btn btn-light position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-products">
+        <div class="container">
+            <h1 class="hero-products__title">Nuestros Productos</h1>
+            <ul class="hero-products__breadcrumb">
+                <li class="hero-products__breadcrumb-item">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="hero-products__breadcrumb-item hero-products__breadcrumb-item--active">
+                    Productos
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section" style="padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar Filtros -->
+                <div class="col-lg-3 sidebar">
+                    <div class="filters">
+                        <div class="filters__header">
+                            <h2 class="filters__title">Filtros</h2>
+                            <button class="filters__clear">
+                                <i class="fas fa-times me-1"></i>Limpiar
+                            </button>
+                        </div>
+                        
+                        <div class="filters__group">
+                            <div class="filters__group-title">
+                                <span>Categorías</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="filters__list">
+                                <li class="filters__item">
+                                    <input type="checkbox" id="cat-smartphones" class="filters__checkbox">
+                                    <label for="cat-smartphones" class="filters__label">Smartphones</label>
+                                    <span class="filters__count">(128)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="cat-laptops" class="filters__checkbox" checked>
+                                    <label for="cat-laptops" class="filters__label">Portátiles</label>
+                                    <span class="filters__count">(76)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="cat-wearables" class="filters__checkbox">
+                                    <label for="cat-wearables" class="filters__label">Wearables</label>
+                                    <span class="filters__count">(54)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="cat-audio" class="filters__checkbox">
+                                    <label for="cat-audio" class="filters__label">Audio</label>
+                                    <span class="filters__count">(92)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="cat-accessories" class="filters__checkbox">
+                                    <label for="cat-accessories" class="filters__label">Accesorios</label>
+                                    <span class="filters__count">(215)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="filters__group">
+                            <div class="filters__group-title">
+                                <span>Precio</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <input type="range" min="0" max="2000" value="800" class="filters__range">
+                            <div class="filters__price-display">
+                                <span>$0</span>
+                                <span>$2000</span>
+                            </div>
+                        </div>
+                        
+                        <div class="filters__group">
+                            <div class="filters__group-title">
+                                <span>Marca</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="filters__list">
+                                <li class="filters__item">
+                                    <input type="checkbox" id="brand-apple" class="filters__checkbox">
+                                    <label for="brand-apple" class="filters__label">Apple</label>
+                                    <span class="filters__count">(45)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="brand-samsung" class="filters__checkbox" checked>
+                                    <label for="brand-samsung" class="filters__label">Samsung</label>
+                                    <span class="filters__count">(68)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="brand-sony" class="filters__checkbox">
+                                    <label for="brand-sony" class="filters__label">Sony</label>
+                                    <span class="filters__count">(32)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="brand-hp" class="filters__checkbox">
+                                    <label for="brand-hp" class="filters__label">HP</label>
+                                    <span class="filters__count">(27)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="brand-dell" class="filters__checkbox">
+                                    <label for="brand-dell" class="filters__label">Dell</label>
+                                    <span class="filters__count">(39)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="filters__group">
+                            <div class="filters__group-title">
+                                <span>Valoración</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="filters__list">
+                                <li class="filters__item">
+                                    <input type="checkbox" id="rating-5" class="filters__checkbox">
+                                    <label for="rating-5" class="filters__label">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                    </label>
+                                    <span class="filters__count">(42)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="rating-4" class="filters__checkbox" checked>
+                                    <label for="rating-4" class="filters__label">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </label>
+                                    <span class="filters__count">(85)</span>
+                                </li>
+                                <li class="filters__item">
+                                    <input type="checkbox" id="rating-3" class="filters__checkbox">
+                                    <label for="rating-3" class="filters__label">
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="fas fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                        <i class="far fa-star text-warning"></i>
+                                    </label>
+                                    <span class="filters__count">(112)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Grid -->
+                <div class="col-lg-9">
+                    <div class="products-grid-header">
+                        <h2 class="products-grid__title">Mostrando 24 de 248 productos</h2>
+                        <div class="sort">
+                            <span class="sort__label">Ordenar por:</span>
+                            <select class="sort__select">
+                                <option>Destacados</option>
+                                <option>Precio: menor a mayor</option>
+                                <option>Precio: mayor a menor</option>
+                                <option>Mejor valorados</option>
+                                <option>Más recientes</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="card">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smartwatch" class="card__img">
+                                <span class="card__badge">-20%</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__category">WEARABLES</div>
+                                <h3 class="card__title">Smartwatch Pro Series X</h3>
+                                <p class="card__text">Monitoriza tu salud y mantente conectado con este elegante reloj inteligente.</p>
+                                <div class="card__rating">
+                                    <div class="card__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="card__reviews">(128)</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div>
+                                    <span class="card__price--old">$199.000</span>
+                                    <span class="card__price">$159.000</span>
+                                </div>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 2 -->
+                        <div class="card">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Auriculares" class="card__img">
+                                <span class="card__badge">Nuevo</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__category">AUDIO</div>
+                                <h3 class="card__title">Auriculares Noise Cancelling</h3>
+                                <p class="card__text">Experiencia de sonido inmersiva con cancelación de ruido activa y 30h de autonomía.</p>
+                                <div class="card__rating">
+                                    <div class="card__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="card__reviews">(245)</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <span class="card__price">$129.000</span>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 3 -->
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Portátil" class="card__img">
+                            <div class="card__body">
+                                <div class="card__category">COMPUTACIÓN</div>
+                                <h3 class="card__title">Ultrabook Design Edition</h3>
+                                <p class="card__text">Potencia y elegancia en un portátil ultradelgado con pantalla 4K y 12h de batería.</p>
+                                <div class="card__rating">
+                                    <div class="card__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="card__reviews">(87)</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <span class="card__price">$1.299.000</span>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 4 -->
+                        <div class="card">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Smartphone" class="card__img">
+                                <span class="card__badge">-15%</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__category">MÓVILES</div>
+                                <h3 class="card__title">Smartphone Pro Camera</h3>
+                                <p class="card__text">Triple cámara profesional, pantalla AMOLED y carga rápida en un diseño premium.</p>
+                                <div class="card__rating">
+                                    <div class="card__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="card__reviews">(312)</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div>
+                                    <span class="card__price--old">$899.000</span>
+                                    <span class="card__price">$764.000</span>
+                                </div>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 5 -->
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Teclado" class="card__img">
+                            <div class="card__body">
+                                <div class="card__category">ACCESORIOS</div>
+                                <h3 class="card__title">Teclado Mecánico Gaming</h3>
+                                <p class="card__text">Teclado mecánico con retroiluminación RGB y switches Cherry MX para gamers.</p>
+                                <div class="card__rating">
+                                    <div class="card__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="card__reviews">(96)</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <span class="card__price">$89.000</span>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 6 -->
+                        <div class="card">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Monitor" class="card__img">
+                                <span class="card__badge">-10%</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__category">MONITORES</div>
+                                <h3 class="card__title">Monitor Gaming 27" 144Hz</h3>
+                                <p class="card__text">Pantalla curva QHD con 144Hz de refresco para una experiencia gaming inmersiva.</p>
+                                <div class="card__rating">
+                                    <div class="card__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="card__reviews">(142)</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <div>
+                                    <span class="card__price--old">$349.000</span>
+                                    <span class="card__price">$314.000</span>
+                                </div>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 7 -->
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Auriculares" class="card__img">
+                            <div class="card__body">
+                                <div class="card__category">AUDIO</div>
+                                <h3 class="card__title">Auriculares Inalámbricos</h3>
+                                <p class="card__text">Sonido de alta fidelidad con 20h de autonomía y diseño ergonómico para máximo confort.</p>
+                                <div class="card__rating">
+                                    <div class="card__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="card__reviews">(78)</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <span class="card__price">$79.000</span>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Product 8 -->
+                        <div class="card">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tablet" class="card__img">
+                                <span class="card__badge">Nuevo</span>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__category">TABLETS</div>
+                                <h3 class="card__title">Tablet Pro 10.5"</h3>
+                                <p class="card__text">Potente tablet con lápiz óptico incluido, perfecta para creativos y profesionales.</p>
+                                <div class="card__rating">
+                                    <div class="card__stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="card__reviews">(54)</span>
+                                </div>
+                            </div>
+                            <div class="card__footer">
+                                <span class="card__price">$499.000</span>
+                                <button class="btn btn--primary">Añadir</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Paginación -->
+                    <div class="pagination">
+                        <ul class="pagination__list">
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">
+                                    <i class="fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">1</a>
+                            </li>
+                            <li class="pagination__item pagination__item--active">
+                                <a href="#" class="pagination__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">5</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="#" class="pagination__link">
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer__title">TechDesign Solutions</h3>
+                    <p>Líderes en tecnología y diseño innovador para mejorar tu experiencia digital con productos de calidad premium.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h3 class="footer__title">Enlaces rápidos</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="index.html" class="footer__link">Inicio</a></li>
+                        <li class="footer__item"><a href="productos.html" class="footer__link">Productos</a></li>
+                        <li class="footer__item"><a href="ofertas.html" class="footer__link">Ofertas</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Novedades</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Reseñas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h3 class="footer__title">Categorías</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Smartphones</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Portátiles</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Wearables</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Audio</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Accesorios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h3 class="footer__title">Contacto</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><i class="fas fa-map-marker-alt me-2"></i> Av. Tecnología 123, Santiago</li>
+                        <li class="footer__item"><i class="fas fa-phone me-2"></i> +56 9 1234 5678</li>
+                        <li class="footer__item"><i class="fas fa-envelope me-2"></i> info@techdesignsolutions.com</li>
+                        <li class="footer__item"><i class="fas fa-clock me-2"></i> L-V: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 TechDesign Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

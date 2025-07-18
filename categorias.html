@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorías - TechDesign Solutions</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <!-- CSS Compilado -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="header__logo">TechDesign</div>
+                
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="index.html" class="header__nav-link">Inicio</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="productos.html" class="header__nav-link">Productos</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="categorias.html" class="header__nav-link header__nav-link--active">Categorías</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="ofertas.html" class="header__nav-link">Ofertas</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="contacto.html" class="header__nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="header__actions">
+                    <button class="btn btn-light me-2">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn btn-light me-2">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="btn btn-light position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-categories">
+        <div class="container">
+            <h1 class="hero-categories__title">Explora Nuestras Categorías</h1>
+            <p class="hero-categories__subtitle">Descubre nuestra amplia gama de productos organizados por categorías</p>
+        </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section class="section section--categories">
+        <div class="container">
+            <div class="row">
+                <!-- Categoría 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <img src="./assets/img/celu-mesa.avif" alt="Smartphones">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Smartphones</h3>
+                            <p class="category-card__count">128 productos</p>
+                            <a href="#" class="btn btn--outline">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Categoría 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <img src="./assets/img/notebook.avif" alt="Portátiles">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Portátiles</h3>
+                            <p class="category-card__count">76 productos</p>
+                            <a href="#" class="btn btn--outline">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Categoría 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <img src="./assets/img/reloj.avif" alt="Wearables">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Wearables</h3>
+                            <p class="category-card__count">54 productos</p>
+                            <a href="#" class="btn btn--outline">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Categoría 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <img src="./assets/img/auriculares.avif" alt="Audio">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Audio</h3>
+                            <p class="category-card__count">92 productos</p>
+                            <a href="#" class="btn btn--outline">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Categoría 5 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <img src="./assets/img/notebook2.avif" alt="Accesorios">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Accesorios</h3>
+                            <p class="category-card__count">215 productos</p>
+                            <a href="#" class="btn btn--outline">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Categoría 6 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="category-card">
+                        <div class="category-card__image">
+                            <img src="./assets/img/notebook.avif" alt="Monitores">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Monitores</h3>
+                            <p class="category-card__count">48 productos</p>
+                            <a href="#" class="btn btn--outline">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section section--featured bg-light">
+        <div class="container">
+            <h2 class="section__title">Productos Destacados</h2>
+            <p class="section__subtitle">Descubre nuestras selecciones más populares</p>
+            
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="./assets/img/reloj.avif" alt="Smartwatch" class="card__img">
+                            <span class="card__badge">-20%</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__category">WEARABLES</div>
+                            <h3 class="card__title">Smartwatch Pro Series X</h3>
+                            <p class="card__text">Monitoriza tu salud y mantente conectado con este elegante reloj inteligente.</p>
+                        </div>
+                        <div class="card__footer">
+                            <div>
+                                <span class="card__price--old">$199.000</span>
+                                <span class="card__price">$159.000</span>
+                            </div>
+                            <button class="btn btn--primary">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="./assets/img/auriculares2.avif" alt="Auriculares" class="card__img">
+                            <span class="card__badge">Nuevo</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__category">AUDIO</div>
+                            <h3 class="card__title">Auriculares Noise Cancelling</h3>
+                            <p class="card__text">Experiencia de sonido inmersiva con cancelación de ruido activa y 30h de autonomía.</p>
+                        </div>
+                        <div class="card__footer">
+                            <span class="card__price">$129.000</span>
+                            <button class="btn btn--primary">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <img src="./assets/img/celu-mesa2.avif" alt="Portátil" class="card__img">
+                        <div class="card__body">
+                            <div class="card__category">COMPUTACIÓN</div>
+                            <h3 class="card__title">Ultrabook Design Edition</h3>
+                            <p class="card__text">Potencia y elegancia en un portátil ultradelgado con pantalla 4K y 12h de batería.</p>
+                        </div>
+                        <div class="card__footer">
+                            <span class="card__price">$1.299.000</span>
+                            <button class="btn btn--primary">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="position-relative">
+                            <img src="./assets/img/foto-hero.avif" alt="Smartphone" class="card__img">
+                            <span class="card__badge">-15%</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__category">MÓVILES</div>
+                            <h3 class="card__title">Smartphone Pro Camera</h3>
+                            <p class="card__text">Triple cámara profesional, pantalla AMOLED y carga rápida en un diseño premium.</p>
+                        </div>
+                        <div class="card__footer">
+                            <div>
+                                <span class="card__price--old">$899.000</span>
+                                <span class="card__price">$764.000</span>
+                            </div>
+                            <button class="btn btn--primary">Añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section">
+        <div class="container">
+            <div class="newsletter">
+                <h2 class="newsletter__title">Únete a nuestra comunidad</h2>
+                <p class="newsletter__text">Suscríbete a nuestro newsletter para recibir ofertas exclusivas, novedades de productos y consejos tecnológicos.</p>
+                
+                <div class="newsletter__form">
+                    <input type="email" class="newsletter__input" placeholder="Tu correo electrónico">
+                    <button class="btn btn--accent">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer__title">TechDesign Solutions</h3>
+                    <p>Líderes en tecnología y diseño innovador para mejorar tu experiencia digital con productos de calidad premium.</p>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h3 class="footer__title">Enlaces rápidos</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="index.html" class="footer__link">Inicio</a></li>
+                        <li class="footer__item"><a href="productos.html" class="footer__link">Productos</a></li>
+                        <li class="footer__item"><a href="categorias.html" class="footer__link">Categorías</a></li>
+                        <li class="footer__item"><a href="ofertas.html" class="footer__link">Ofertas</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Reseñas</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h3 class="footer__title">Categorías</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Smartphones</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Portátiles</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Wearables</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Audio</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Accesorios</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h3 class="footer__title">Contacto</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><i class="fas fa-map-marker-alt me-2"></i> Av. Tecnología 123, Santiago</li>
+                        <li class="footer__item"><i class="fas fa-phone me-2"></i> +56 9 1234 5678</li>
+                        <li class="footer__item"><i class="fas fa-envelope me-2"></i> info@techdesignsolutions.cl</li>
+                        <li class="footer__item"><i class="fas fa-clock me-2"></i> L-V: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2025 TechDesign Solutions. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

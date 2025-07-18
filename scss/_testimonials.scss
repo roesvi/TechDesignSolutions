@@ -1,0 +1,57 @@
+@use './_variables' as *;
+@use './_mixins' as *;
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .testimonial {
+    background: white;
+    border-radius: $border-radius;
+    padding: 2rem;
+    box-shadow: $box-shadow;
+    position: relative;
+    
+    &::before {
+      content: '"';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 5rem;
+      font-family: serif;
+      color: rgba($primary, 0.1);
+      line-height: 1;
+    }
+  }
+  
+  .testimonial__text {
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial__author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .testimonial__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .testimonial__name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .testimonial__role {
+    color: $gray;
+    font-size: 0.9rem;
+  }
