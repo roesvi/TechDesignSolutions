@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,46 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="header__logo">TechDesign</div>
-                
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link header__nav-link--active">Inicio</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="./productos.html" class="header__nav-link">Productos</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="./categorias.html" class="header__nav-link">Categorías</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="./ofertas.html" class="header__nav-link">Ofertas</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="./contacto.html" class="header__nav-link">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <div class="header__actions">
+    <!-- Navbar bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/tds-w-l.png" alt="Logo" class="header__logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categorias.html">Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex ms-md-2">
                     <button class="btn btn-light me-2">
                         <i class="fas fa-search"></i>
                     </button>
@@ -56,7 +65,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -64,14 +73,16 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h1 class="hero__title">Diseño Innovador para tu Mundo Digital</h1>
-                    <p class="hero__subtitle">Descubre nuestra colección premium de productos tecnológicos diseñados para mejorar tu vida digital con estilo y funcionalidad.</p>
+                    <p class="hero__subtitle">Descubre nuestra colección premium de productos tecnológicos diseñados
+                        para mejorar tu vida digital con estilo y funcionalidad.</p>
                     <div class="d-flex gap-3">
                         <a href="productos.html" class="btn btn--accent">Explorar Colección</a>
                         <a href="ofertas.html" class="btn btn--outline">Ver Ofertas</a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center d-none d-lg-block">
-                    <img src="./assets/img/foto-hero.avif" alt="Productos tecnológicos" class="img-fluid" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+                    <img src="./assets/img/foto-hero.avif" alt="Productos tecnológicos" class="img-fluid"
+                        style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
                 </div>
             </div>
         </div>
@@ -81,8 +92,9 @@
     <section class="section">
         <div class="container">
             <h2 class="section__title">Productos Destacados</h2>
-            <p class="section__subtitle">Descubre nuestras selecciones más populares y mejor valoradas por nuestros clientes</p>
-            
+            <p class="section__subtitle">Descubre nuestras selecciones más populares y mejor valoradas por nuestros
+                clientes</p>
+
             <div class="row g-4">
                 <!-- Product 1 -->
                 <div class="col-md-6 col-lg-3">
@@ -94,7 +106,8 @@
                         <div class="card__body">
                             <div class="card__category">WEARABLES</div>
                             <h3 class="card__title">Smartwatch Pro Series X</h3>
-                            <p class="card__text">Monitoriza tu salud y mantente conectado con este elegante reloj inteligente con batería de 7 días.</p>
+                            <p class="card__text">Monitoriza tu salud y mantente conectado con este elegante reloj
+                                inteligente con batería de 7 días.</p>
                         </div>
                         <div class="card__footer">
                             <div>
@@ -105,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 2 -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card">
@@ -116,7 +129,8 @@
                         <div class="card__body">
                             <div class="card__category">AUDIO</div>
                             <h3 class="card__title">Auriculares Noise Cancelling</h3>
-                            <p class="card__text">Experimenta el sonido como nunca con cancelación de ruido activa y 30h de autonomía.</p>
+                            <p class="card__text">Experimenta el sonido como nunca con cancelación de ruido activa y 30h
+                                de autonomía.</p>
                         </div>
                         <div class="card__footer">
                             <span class="card__price">$129.000</span>
@@ -124,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 3 -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card">
@@ -132,7 +146,8 @@
                         <div class="card__body">
                             <div class="card__category">COMPUTACIÓN</div>
                             <h3 class="card__title">Ultrabook Design Edition</h3>
-                            <p class="card__text">Potencia y elegancia en un portátil ultradelgado con pantalla 4K y 12h de batería.</p>
+                            <p class="card__text">Potencia y elegancia en un portátil ultradelgado con pantalla 4K y 12h
+                                de batería.</p>
                         </div>
                         <div class="card__footer">
                             <span class="card__price">$1.299.000</span>
@@ -140,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Product 4 -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card">
@@ -151,7 +166,8 @@
                         <div class="card__body">
                             <div class="card__category">MÓVILES</div>
                             <h3 class="card__title">Smartphone Pro Camera</h3>
-                            <p class="card__text">Triple cámara profesional, pantalla AMOLED y carga rápida en un diseño premium.</p>
+                            <p class="card__text">Triple cámara profesional, pantalla AMOLED y carga rápida en un diseño
+                                premium.</p>
                         </div>
                         <div class="card__footer">
                             <div>
@@ -163,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center mt-5">
                 <button class="btn btn--outline">Ver todos los productos</button>
             </div>
@@ -175,7 +191,7 @@
         <div class="container">
             <h2 class="section__title">Por qué elegirnos</h2>
             <p class="section__subtitle">Ofrecemos la mejor experiencia de compra en tecnología</p>
-            
+
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="feature">
@@ -183,20 +199,22 @@
                             <i class="fas fa-shipping-fast"></i>
                         </div>
                         <h3 class="feature__title">Envío Rápido</h3>
-                        <p class="feature__text">Entrega en 24-48h en toda la península con seguimiento en tiempo real.</p>
+                        <p class="feature__text">Entrega en 24-48h en toda la península con seguimiento en tiempo real.
+                        </p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3">
                     <div class="feature">
                         <div class="feature__icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <h3 class="feature__title">Garantía Extendida</h3>
-                        <p class="feature__text">3 años de garantía en todos nuestros productos y soporte técnico premium.</p>
+                        <p class="feature__text">3 años de garantía en todos nuestros productos y soporte técnico
+                            premium.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3">
                     <div class="feature">
                         <div class="feature__icon">
@@ -206,14 +224,15 @@
                         <p class="feature__text">30 días para cambiar de opinión con recogida gratuita en domicilio.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6 col-lg-3">
                     <div class="feature">
                         <div class="feature__icon">
                             <i class="fas fa-headset"></i>
                         </div>
                         <h3 class="feature__title">Soporte 24/7</h3>
-                        <p class="feature__text">Nuestro equipo de expertos está disponible para ayudarte en cualquier momento.</p>
+                        <p class="feature__text">Nuestro equipo de expertos está disponible para ayudarte en cualquier
+                            momento.</p>
                     </div>
                 </div>
             </div>
@@ -225,11 +244,12 @@
         <div class="container">
             <h2 class="section__title">Lo que dicen nuestros clientes</h2>
             <p class="section__subtitle">Más de 10.000 clientes satisfechos en todo el mundo</p>
-            
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p class="testimonial__text">"La calidad de los productos superó mis expectativas. El envío fue increíblemente rápido y el soporte postventa excepcional."</p>
+
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial h-100 p-4 rounded shadow-sm bg-white">
+                        <p class="testimonial__text">"La calidad de los productos superó mis expectativas. El envío fue
+                            increíblemente rápido y el soporte postventa excepcional."</p>
                         <div class="testimonial__author">
                             <img src="./assets/img/mujer.jpg" alt="Cliente" class="testimonial__avatar">
                             <div>
@@ -239,10 +259,11 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p class="testimonial__text">"He comprado varios productos y todos han sido de primera calidad. La garantía extendida me da mucha tranquilidad en mis compras."</p>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial h-100 p-4 rounded shadow-sm bg-white">
+                        <p class="testimonial__text">"He comprado varios productos y todos han sido de primera calidad.
+                            La garantía extendida me da mucha tranquilidad en mis compras."</p>
                         <div class="testimonial__author">
                             <img src="./assets/img/hombre.jpg" alt="Cliente" class="testimonial__avatar">
                             <div>
@@ -252,10 +273,11 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="col-md-4">
-                    <div class="testimonial">
-                        <p class="testimonial__text">"La experiencia de compra es excelente. Sitio web intuitivo, proceso de pago seguro y entrega más rápida de lo esperado. ¡Volveré a comprar!"</p>
+
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial h-100 p-4 rounded shadow-sm bg-white">
+                        <p class="testimonial__text">"La experiencia de compra es excelente. Sitio web intuitivo,
+                            proceso de pago seguro y entrega más rápida de lo esperado. ¡Volveré a comprar!"</p>
                         <div class="testimonial__author">
                             <img src="./assets/img/mujer2.jpg" alt="Cliente" class="testimonial__avatar">
                             <div>
@@ -274,12 +296,155 @@
         <div class="container">
             <div class="newsletter">
                 <h2 class="newsletter__title">Únete a nuestra comunidad</h2>
-                <p class="newsletter__text">Suscríbete a nuestro newsletter para recibir ofertas exclusivas, novedades de productos y consejos tecnológicos.</p>
-                
+                <p class="newsletter__text">Suscríbete a nuestro newsletter para recibir ofertas exclusivas, novedades
+                    de productos y consejos tecnológicos.</p>
+
                 <div class="newsletter__form">
                     <input type="email" class="newsletter__input" placeholder="Tu correo electrónico">
                     <button class="btn btn--accent">Suscribirse</button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--contact">
+        <div class="container">
+            <div class="row d-flex align-items-stretch">
+                <!-- Contact Info -->
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="contact-info h-100 p-4 rounded shadow-sm bg-white">
+                        <h2 class="contact-info__title">Información de Contacto</h2>
+                        <p class="contact-info__text">Estamos disponibles para responder a tus preguntas y ayudarte con
+                            lo que necesites. No dudes en ponerte en contacto con nosotros a través de cualquiera de los
+                            siguientes medios.</p>
+
+                        <ul class="contact-info__list">
+                            <li class="contact-info__item">
+                                <div class="contact-info__icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-info__content">
+                                    <h3 class="contact-info__heading">Dirección</h3>
+                                    <p>Av. Tecnología 123, Santiago, Chile</p>
+                                </div>
+                            </li>
+
+                            <li class="contact-info__item">
+                                <div class="contact-info__icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div class="contact-info__content">
+                                    <h3 class="contact-info__heading">Teléfono</h3>
+                                    <p>+56 9 123 45 679</p>
+                                    <p>+56 9 123 45 678 (Móvil)</p>
+                                </div>
+                            </li>
+
+                            <li class="contact-info__item">
+                                <div class="contact-info__icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info__content">
+                                    <h3 class="contact-info__heading">Email</h3>
+                                    <p>info@techdesignsolutions.cl</p>
+                                    <p>soporte@techdesignsolutions.cl</p>
+                                </div>
+                            </li>
+
+                            <li class="contact-info__item">
+                                <div class="contact-info__icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-info__content">
+                                    <h3 class="contact-info__heading">Horario de Atención</h3>
+                                    <p>Lunes a Viernes: 9:00 - 18:00</p>
+                                    <p>Sábados: 10:00 - 14:00</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="contact-info__social">
+                            <h3 class="contact-info__heading">Síguenos</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-links__item">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-links__item">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-links__item">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-links__item">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-links__item">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form h-100 p-4 rounded shadow-sm bg-white">
+                        <h2 class="contact-form__title">Envíanos un Mensaje</h2>
+                        <p class="contact-form__subtitle">Completa el siguiente formulario y nos pondremos en contacto
+                            contigo lo antes posible.</p>
+
+                        <form class="form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form__group">
+                                        <label for="name" class="form__label">Nombre Completo</label>
+                                        <input type="text" id="name" class="form__control" placeholder="Tu nombre">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form__group">
+                                        <label for="email" class="form__label">Correo Electrónico</label>
+                                        <input type="email" id="email" class="form__control" placeholder="tu@email.com">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="subject" class="form__label">Asunto</label>
+                                <input type="text" id="subject" class="form__control"
+                                    placeholder="¿Sobre qué quieres contactarnos?">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="phone" class="form__label">Teléfono (Opcional)</label>
+                                <input type="tel" id="phone" class="form__control" placeholder="+56 9 1234 5678">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="message" class="form__label">Mensaje</label>
+                                <textarea id="message" class="form__control form__control--textarea" rows="5"
+                                    placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+
+                            <div class="form__group">
+                                <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.523932279725!2d-70.66004592441402!3d-33.44886828088418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c55b2cddc9df%3A0x54c8f59f2a38c70!2sAv.%20Tecnolog%C3%ADa%20123%2C%20Santiago!5e0!3m2!1ses-419!2scl!4v1689634500000!5m2!1ses-419!2scl"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -290,7 +455,8 @@
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <h3 class="footer__title">TechDesign Solutions</h3>
-                    <p>Líderes en tecnología y diseño innovador para mejorar tu experiencia digital con productos de calidad premium.</p>
+                    <p>Líderes en tecnología y diseño innovador para mejorar tu experiencia digital con productos de
+                        calidad premium.</p>
                     <div class="footer__social">
                         <a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
@@ -298,7 +464,7 @@
                         <a href="#" class="footer__social-link"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
                     <h3 class="footer__title">Enlaces rápidos</h3>
                     <ul class="footer__list">
@@ -309,7 +475,7 @@
                         <li class="footer__item"><a href="#" class="footer__link">Reseñas</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
                     <h3 class="footer__title">Categorías</h3>
                     <ul class="footer__list">
@@ -320,25 +486,28 @@
                         <li class="footer__item"><a href="#" class="footer__link">Accesorios</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-4">
                     <h3 class="footer__title">Contacto</h3>
                     <ul class="footer__list">
-                        <li class="footer__item"><i class="fas fa-map-marker-alt me-2"></i> Av. Tecnología 123, Santiago</li>
+                        <li class="footer__item"><i class="fas fa-map-marker-alt me-2"></i> Av. Tecnología 123, Santiago
+                        </li>
                         <li class="footer__item"><i class="fas fa-phone me-2"></i> +56 9 1234 5678</li>
                         <li class="footer__item"><i class="fas fa-envelope me-2"></i> info@techdesignsolutions.cl</li>
                         <li class="footer__item"><i class="fas fa-clock me-2"></i> L-V: 9:00 - 18:00</li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer__bottom">
                 <p>&copy; 2025 TechDesign Solutions. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript boton hamburgeuesa-->
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

@@ -14,33 +14,38 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="header__logo">TechDesign</div>
-                
-                <nav class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item">
-                            <a href="index.html" class="header__nav-link">Inicio</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="productos.html" class="header__nav-link">Productos</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="categorias.html" class="header__nav-link">Categorías</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="ofertas.html" class="header__nav-link">Ofertas</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="contacto.html" class="header__nav-link header__nav-link--active">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <div class="header__actions">
+ <!-- Navbar bootstrap -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/tds-w-l.png" alt="Logo" class="header__logo-img">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categorias.html">Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex ms-md-2">
                     <button class="btn btn-light me-2">
                         <i class="fas fa-search"></i>
                     </button>
@@ -56,7 +61,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero-contact">
@@ -78,13 +83,15 @@
     <!-- Contact Section -->
     <section class="section section--contact">
         <div class="container">
-            <div class="row">
+            <div class="row d-flex align-items-stretch">
                 <!-- Contact Info -->
                 <div class="col-lg-5 mb-5 mb-lg-0">
-                    <div class="contact-info">
+                    <div class="contact-info h-100 p-4 rounded shadow-sm bg-white">
                         <h2 class="contact-info__title">Información de Contacto</h2>
-                        <p class="contact-info__text">Estamos disponibles para responder a tus preguntas y ayudarte con lo que necesites. No dudes en ponerte en contacto con nosotros a través de cualquiera de los siguientes medios.</p>
-                        
+                        <p class="contact-info__text">Estamos disponibles para responder a tus preguntas y ayudarte con
+                            lo que necesites. No dudes en ponerte en contacto con nosotros a través de cualquiera de los
+                            siguientes medios.</p>
+
                         <ul class="contact-info__list">
                             <li class="contact-info__item">
                                 <div class="contact-info__icon">
@@ -95,7 +102,7 @@
                                     <p>Av. Tecnología 123, Santiago, Chile</p>
                                 </div>
                             </li>
-                            
+
                             <li class="contact-info__item">
                                 <div class="contact-info__icon">
                                     <i class="fas fa-phone-alt"></i>
@@ -106,7 +113,7 @@
                                     <p>+56 9 123 45 678 (Móvil)</p>
                                 </div>
                             </li>
-                            
+
                             <li class="contact-info__item">
                                 <div class="contact-info__icon">
                                     <i class="fas fa-envelope"></i>
@@ -117,7 +124,7 @@
                                     <p>soporte@techdesignsolutions.cl</p>
                                 </div>
                             </li>
-                            
+
                             <li class="contact-info__item">
                                 <div class="contact-info__icon">
                                     <i class="fas fa-clock"></i>
@@ -129,7 +136,7 @@
                                 </div>
                             </li>
                         </ul>
-                        
+
                         <div class="contact-info__social">
                             <h3 class="contact-info__heading">Síguenos</h3>
                             <div class="social-links">
@@ -152,13 +159,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Contact Form -->
                 <div class="col-lg-7">
-                    <div class="contact-form">
+                    <div class="contact-form h-100 p-4 rounded shadow-sm bg-white">
                         <h2 class="contact-form__title">Envíanos un Mensaje</h2>
-                        <p class="contact-form__subtitle">Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
-                        
+                        <p class="contact-form__subtitle">Completa el siguiente formulario y nos pondremos en contacto
+                            contigo lo antes posible.</p>
+
                         <form class="form">
                             <div class="row">
                                 <div class="col-md-6">
@@ -174,22 +182,24 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="form__group">
                                 <label for="subject" class="form__label">Asunto</label>
-                                <input type="text" id="subject" class="form__control" placeholder="¿Sobre qué quieres contactarnos?">
+                                <input type="text" id="subject" class="form__control"
+                                    placeholder="¿Sobre qué quieres contactarnos?">
                             </div>
-                            
+
                             <div class="form__group">
                                 <label for="phone" class="form__label">Teléfono (Opcional)</label>
                                 <input type="tel" id="phone" class="form__control" placeholder="+56 9 1234 5678">
                             </div>
-                            
+
                             <div class="form__group">
                                 <label for="message" class="form__label">Mensaje</label>
-                                <textarea id="message" class="form__control form__control--textarea" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+                                <textarea id="message" class="form__control form__control--textarea" rows="5"
+                                    placeholder="Escribe tu mensaje aquí..."></textarea>
                             </div>
-                            
+
                             <div class="form__group">
                                 <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
                             </div>
