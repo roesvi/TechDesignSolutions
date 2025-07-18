@@ -1,19 +1,19 @@
 // Importar todos los parciales
-@use './_variables' as *;
-@use './_mixins' as *;
-@use './_global' as *;
-@use './_bootstrap-overrides' as *;
-@use './_header' as *;
-@use './_hero' as *;
-@use './_products' as *;
-@use './_features' as *;
-@use './_testimonials' as *;
-@use './_newsletter' as *;
-@use './_footer' as *;
-@use './_products-page' as *;
-@use './_categories-page' as *; 
-@use './_offers-page' as *;
-@use './_contact-page' as *;
+@use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'base/global' as *;
+@use 'vendors/bootstrap-overrides' as *;
+@use 'layout/header' as *;
+@use 'layout/hero' as *;
+@use 'components/products' as *;
+@use 'components/features' as *;
+@use 'components/testimonials' as *;
+@use 'components/newsletter' as *;
+@use 'layout/footer' as *;
+@use 'pages/products-page' as *;
+@use 'pages/categories-page' as *; 
+@use 'pages/offers-page' as *;
+@use 'pages/contact-page' as *;
 
 // Estilos adicionales
 .btn--accent {
