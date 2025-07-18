@@ -1,33 +1,29 @@
 @use './_variables' as *;
 
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` no existe en `$breakpoints` map.";
   }
-  
-  @mixin flex-between {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  @mixin card-hover {
+}
+
+@mixin card-hover {
+  &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
   }
-  
-  @mixin respond-to($breakpoint) {
-    @if $breakpoint == sm {
-      @media (max-width: $breakpoint-sm) { @content; }
-    }
-    @else if $breakpoint == md {
-      @media (max-width: $breakpoint-md) { @content; }
-    }
-    @else if $breakpoint == lg {
-      @media (max-width: $breakpoint-lg) { @content; }
-    }
-    @else if $breakpoint == xl {
-      @media (max-width: $breakpoint-xl) { @content; }
-    }
-  }
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
