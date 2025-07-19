@@ -64,6 +64,11 @@ El sitio web está listo para ser usado directamente desde el navegador. No requ
 -Roberto Escobar Vivallo
 -Gonzalo Román Reyes
 
-Ruta de repositorio : 
+## Ruta de repositorio : 
 
 https://github.com/roesvi/TechDesignSolutions
+
+
+## Ruta del sitio
+
+https://roesvi.github.io/TechDesignSolutions/
